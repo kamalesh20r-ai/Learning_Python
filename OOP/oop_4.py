@@ -6,7 +6,7 @@ class Student :
     def get_marks(self):
         return self.__marks
     def set_marks(self,new_marks):
-        if new_marks > 0 and new_marks < 100 :
+        if new_marks >= 0 and new_marks <= 100 :
             self.__marks = new_marks
         else :
             print("Invalid Marks")
